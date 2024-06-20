@@ -1,0 +1,20 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+   background-color: aliceblue;
+}
+nav{
+    border: 2px solid red;
+    /* margin: 10px; */
+    padding: 10px;
+    width: 100%;
+    position:fixed;
+    background-color: rgb(132, 122, 122);
+}
+section{
+    padding: 90px;
+    /* margin-top: 50px; */
+    /* border: 5px solid blue; */
+    /* height: 80px; */
+}

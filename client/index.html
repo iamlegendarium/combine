@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1><br><br>
+    <form action="http://localhost:5000/register" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" name="firstName"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lastName"><br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="DOB" class="one"><br><br>
+        <label for="">Sex:</label>
+        <select name="Sex" class="two">
+            <option></option>
+            <option>male</option>
+            <option>female</option>
+        </select><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" placeholder="input address" class="three"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="four"><br><br>
+        <label for="">Password:</label>
+        <input type="password" name="password" placeholder="input password" required minlength="5" class="five"><br><br>
+        <button type="submit" onclick="clickBtn()">Sign Up</button><br>
+    </form>
+    
+    <script src="index.js"></script> 
+    <!-- <button onclick="signin()"> Sign Up</button><br> 
+</body>
+</html>
