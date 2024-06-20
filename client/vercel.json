@@ -1,8 +1,21 @@
 {
     "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
+      { 
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/register",
+        "methods": ["POST"],
+        "dest": "/api/register"
+      },
+      {
+        "src": "/login",
+        "methods": ["POST"],
+        "dest": "/api/login"
+      }
     ]
-}
+  }
+  
