@@ -1,5 +1,5 @@
 const clickBtn = () =>{
-    let url = 'http://localhost:5000/register'
+    let url = 'https://combine-eight.vercel.app/register'
 
     fetch(url)
     .then((response)=>{

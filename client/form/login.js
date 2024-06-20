@@ -1,6 +1,6 @@
 const loginBtn = () => {
     const token = localStorage.setItem('token', token)
-    let url = 'http://localhost:5000/login'
+    let url = 'https://combine-eight.vercel.app/login'
 
     fetch(url)
     .then((response)=>{
