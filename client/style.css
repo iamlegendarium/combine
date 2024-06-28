@@ -1,38 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Add your custom CSS here */
+
+/* Example of custom styling */
+.card {
+    animation: fadeInAnimation 0.5s ease-in-out;
 }
-body{
-    background-color: rgb(226, 174, 43);
-    padding: 100px;
-    margin-left: 350px;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-.btn{
-    background-color: blue;
-    color: white;
-    border-radius: 50px;
-    height: 20px;
-    width: 100px;
-    cursor: pointer;
-}
-hover.btn{
-    color: green;
-}
-.one{
-    margin-left: 37px;
-}
-.two{
-    margin-left: 47px;
-}
-.three{
-    margin-left: 20px;
-}
-.four{
-    margin-left: 33px;
-}
-.five{
-    margin-left: 10px;
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
