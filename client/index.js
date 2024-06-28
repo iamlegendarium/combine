@@ -1,5 +1,5 @@
 const clickBtn = () =>{
-    let url = 'https://combine-eight.vercel.app/register'
+    let url = 'https://combine-4nvv.onrender.com/register'
 
     fetch(url)
     .then((response)=>{
