@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="/form/login.css">
-</head>
-<body>
-    <h3>Login here</h3><br>
-    <hr><br>
-    <form action="https://combine-eight.vercel.app/login" method="post">
-    <label for="User">email:</label>
-    <input type="email" name="email"><br><br>
-    <label type="password">Password:</label>
-    <input type="password" name="password" required minlength="5" placeholder="input password"><br><br>
-    <button onclick="loginBtn()" class="btn">Login</button>
-    </form>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-img">
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-4 col-sm-6 col-xs-10 bg-white p-4 rounded shadow-lg">
+          <h3 class="text-center mb-4">Login here</h3>
+          <hr />
+          <form action="https://combine-4nvv.onrender.com/login" method="post">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                required
+                minlength="5"
+                placeholder="Enter password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="login.js"></script>
-</body>
+
+    <!-- Bootstrap JS and custom scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
